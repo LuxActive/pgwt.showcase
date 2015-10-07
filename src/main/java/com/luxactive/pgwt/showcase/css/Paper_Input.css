@@ -1,0 +1,21 @@
+.fill {
+	width: 100%;
+}
+
+.left {
+	margin-left:0;
+	margin-right:auto;
+}
+
+.button{
+	color: #e57373;
+	padding: 0px 4px;
+}
+.button paper-ripple {
+	color: #ff8a80;
+}
+
+.button iron-icon {
+	width: 15px;
+    height: 15px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:p="urn:import:com.luxactive.pgwt.paper_card" xmlns:b="urn:import:com.luxactive.pgwt.paper_button"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field='css' type='com.luxactive.pgwt.showcase.css.Css' />
+
+	<g:HTMLPanel>
+		<p:PaperCard ui:field="card1" styleName="{css.paper_card_style.style}">
+			<div class="card-content">
+				<div>
+					Cards are a convenient means of displaying content composed of
+					different types of objects.
+					<br />
+					<br />
+					<b>Hurray!</b>
+				</div>
+			</div>
+		</p:PaperCard>
+		<p:PaperCard ui:field="card2" styleName="{css.paper_card_style.style}"
+			heading="Some cards only have titles" />
+		<p:PaperCard ui:field="card3" styleName="{css.paper_card_style.style}"
+			heading="Paper Shadows" headingStyle="color:#e91e63;">
+			<div class="card-content">
+				Cards can have different shadows.
+			</div>
+			<div class="card-actions">
+				<paper-button ui:field="card3_button1" />
+				<paper-button ui:field="card3_button2" />
+			</div>
+		</p:PaperCard>
+		<p:PaperCard ui:field="card4" styleName="{css.paper_card_style.style}">
+			<div class="card-content">
+				Lorem ipsum dolor sit amet, nec ad conceptam
+				interpretaris, mea ne solet repudiandae.
+				Laudem nostrud ei vim.
+				Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam
+				option quo.
+				Sed sale integre pericula ei, rebum adipiscing ius ea.
+			</div>
+			<div class="card-actions">
+				<paper-icon-button ui:field="card4_button1" />
+				<paper-icon-button ui:field="card4_button2" />
+				<paper-icon-button ui:field="card4_button3" />
+			</div>
+		</p:PaperCard>
+		<p:PaperCard ui:field="card5" styleName="{css.paper_card_style.style}"
+			heading="Cards can have titles" headingStyle="color:#e91e63;">
+			<div class="card-content">
+				Lorem ipsum dolor sit amet, nec ad conceptam
+				interpretaris, mea ne solet repudiandae.
+				Laudem nostrud ei vim.
+				Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam
+				option quo.
+				Sed sale integre pericula ei, rebum adipiscing ius ea.
+			</div>
+			<div class="card-actions">
+				<paper-button ui:field="card5_button1" />
+				<paper-button ui:field="card5_button2" />
+			</div>
+		</p:PaperCard>
+		<p:PaperCard ui:field="card6" styleName="{css.paper_card_style.style}"
+			heading="Titles AND images!" headingStyle="color:#e91e63;"
+			image="http://placehold.it/350x150">
+			<div class="card-content">
+				Lorem ipsum dolor sit amet, nec ad conceptam
+				interpretaris, mea ne solet repudiandae.
+				Laudem nostrud ei vim.
+				Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam
+				option quo.
+				Sed sale integre pericula ei, rebum adipiscing ius ea.
+			</div>
+			<div class="card-actions">
+				<paper-button ui:field="card6_button1" />
+				<paper-button ui:field="card6_button2" />
+			</div>
+		</p:PaperCard>
+		<p:PaperCard ui:field="card7" styleName="{css.paper_card_style.style}"
+			heading="Actions can be stacked" headingStyle="color:#e91e63;">
+			<div class="card-content">
+				Lorem ipsum dolor sit amet, nec ad conceptam
+				interpretaris, mea ne solet repudiandae.
+				Laudem nostrud ei vim.
+				Sapientem consequuntur usu ad, vel etiam philosophia ex, ad quidam
+				option quo.
+				Sed sale integre pericula ei, rebum adipiscing ius ea.
+			</div>
+			<div class="card-actions">
+				<paper-button ui:field="card7_button1" />
+			</div>
+			<div class="card-actions">
+				<paper-button ui:field="card7_button2" />
+			</div>
+		</p:PaperCard>
+		<p:PaperCard ui:field="card8" styleName="{css.paper_card_style.style}">
+			<div class="card-content" >
+				<div class="{css.paper_card_style.avatar}">:)</div>
+				<div class="{css.paper_card_style.title}">
+					<div class="{css.paper_card_style.medium}">Title</div>
+					<div class="{css.paper_card_style.small}">subtitle</div>
+				</div>
+			</div>
+			<img class="{css.paper_card_style.img}" src="http://placehold.it/350x150"/>
+			<div class="card-content">
+				<div class="{css.paper_card_style.big}">Usu eu novum principes, vel quodsi aliquip ea.</div>
+				<div class="{css.paper_card_style.medium}">Ut labores minimum atomorum pro. Laudem tibique ut
+					has.</div>
+				<div class="{css.paper_card_style.small}">Usu eu novum principes, vel quodsi aliquip ea.</div>
+			</div>
+		</p:PaperCard>
+	</g:HTMLPanel>
+</ui:UiBinder> 
+

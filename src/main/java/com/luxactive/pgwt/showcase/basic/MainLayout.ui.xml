@@ -1,0 +1,31 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui" xmlns:i="urn:import:com.luxactive.pgwt.paper_icon_button"
+	xmlns:b="urn:import:com.luxactive.pgwt.paper_button">
+
+	<ui:with field='css' type='com.luxactive.pgwt.showcase.css.Css' />
+
+	<g:HTMLPanel>
+		<paper-drawer-panel ui:field="drawer" drawerWidth="200px" responsiveWidth="800px">
+			<div drawer="" class="{css.mainLayout_style.bgColor}">
+				<g:VerticalPanel styleName="{css.mainLayout_style.menu}">
+					<b:PaperButton text="paper-button" raised="true"
+						ui:field="paper_button" styleName="{css.mainLayout_style.button}" />
+					<b:PaperButton text="paper-card" raised="true"
+						ui:field="paper_card" styleName="{css.mainLayout_style.button}" />
+					<b:PaperButton text="paper-icon-button" raised="true"
+						ui:field="paper_icon_button" styleName="{css.mainLayout_style.button}" />
+						<b:PaperButton text="paper-input" raised="true"
+						ui:field="paper_input" styleName="{css.mainLayout_style.button}" />
+				</g:VerticalPanel>
+			</div>
+			<div main="" class="{css.mainLayout_style.content} {css.mainLayout_style.bgColor}">
+				<g:HorizontalPanel styleName="{css.mainLayout_style.fill}">
+					<i:PaperIconButton ui:field="menuButton" icon="menu" styleName="{css.mainLayout_style.space}" />
+					<g:SimplePanel ui:field="content"/>
+				</g:HorizontalPanel>
+			</div>
+		</paper-drawer-panel>
+	</g:HTMLPanel>
+	
+</ui:UiBinder> 

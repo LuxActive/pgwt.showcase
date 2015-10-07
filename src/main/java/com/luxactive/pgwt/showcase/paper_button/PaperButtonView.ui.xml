@@ -1,0 +1,94 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:p="urn:import:com.luxactive.pgwt.paper_button" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field='css' type='com.luxactive.pgwt.showcase.css.Css' />
+
+	<g:HTMLPanel>
+		<div class="{css.paper_button_style.flex}">
+			<div
+				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
+				<h4>Flat</h4>
+				<paper-card ui:field="flat_card">
+					<div class="card-content">
+						<div class="{css.paper_button_style.minWidth}">
+							<paper-button class="{css.paper_button_style.style}">Test</paper-button>
+							<p:PaperButton ui:field="flat_button" text="button"
+								styleName="{css.paper_button_style.style}" />
+							<p:PaperButton ui:field="flat_colorful" text="colorful"
+								styleName="{css.paper_button_style.colorful} {css.paper_button_style.style}" />
+							<p:PaperButton ui:field="flat_disabled" text="disabled"
+								disabled="true" styleName="{css.paper_button_style.style}" />
+							<p:PaperButton ui:field="flat_noink" text="noink"
+								noink="true" styleName="{css.paper_button_style.style}" />
+							<p:PaperButton ui:field="flat_ok" text="ok"
+								styleName="{css.paper_button_style.colorful} {css.paper_button_style.style}"
+								icon="check" />
+							<p:PaperButton ui:field="flat_cancel" text="cancel"
+								icon="clear" styleName="{css.paper_button_style.style}" />
+						</div>
+					</div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
+				<h4>Raised</h4>
+				<paper-card ui:field="raised_card">
+					<div class="card-content {css.paper_button_style.minWidth}">
+						<div class="{css.paper_button_style.minWidth}">
+							<p:PaperButton ui:field="raised_button" text="button"
+								raised="true" styleName="{css.paper_button_style.style}" />
+							<p:PaperButton ui:field="raised_colorful" text="colorful"
+								raised="true"
+								styleName="{css.paper_button_style.colorful2} {css.paper_button_style.style}" />
+							<p:PaperButton ui:field="raised_disabled" text="disabled"
+								raised="true" disabled="true" styleName="{css.paper_button_style.style}" />
+							<p:PaperButton ui:field="raised_noink" text="noink"
+								raised="true" noink="true" styleName="{css.paper_button_style.style}" />
+							<p:PaperButton ui:field="raised_ok" text="ok"
+								raised="true"
+								styleName="{css.paper_button_style.colorful2} {css.paper_button_style.style}"
+								icon="check" />
+							<p:PaperButton ui:field="raised_cancel" text="cancel"
+								raised="true" icon="clear" styleName="{css.paper_button_style.style}" />
+						</div>
+					</div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
+				<h4>Toggleable</h4>
+				<paper-card ui:field="toggleable_card"
+					class="{css.paper_card_style.padding_right}">
+					<div class="card-content {css.paper_button_style.minWidth}">
+						Sorry no toggle awailable!
+					</div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
+				<h4>Color</h4>
+				<paper-card ui:field="color_card">
+					<div class="card-content">
+						<div class="{css.paper_button_style.minWidth}">
+							<p:PaperButton ui:field="color_button" text="button"
+								styleName="{css.paper_button_style.style} {css.paper_button_style.color1}" />
+							<p:PaperButton ui:field="color_noink" text="noink"
+								styleName="{css.paper_button_style.style} {css.paper_button_style.color2}" />
+							<p:PaperButton ui:field="color_colorful" text="colorful"
+								styleName="{css.paper_button_style.style} {css.paper_button_style.color3}" />
+							<p:PaperButton ui:field="color_colorful2" text="colorful"
+								styleName="{css.paper_button_style.style} {css.paper_button_style.color4}" />
+							<p:PaperButton ui:field="color_ok" text="ok"
+								styleName="{css.paper_button_style.style} {css.paper_button_style.color5}"
+								icon="check" />
+							<p:PaperButton ui:field="color_cancel" text="cancel"
+								icon="clear"
+								styleName="{css.paper_button_style.style} {css.paper_button_style.color6}" />
+						</div>
+					</div>
+				</paper-card>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 

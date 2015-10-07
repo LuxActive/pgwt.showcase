@@ -1,0 +1,106 @@
+.colorful{
+    color: #4285f4;
+}
+
+.colorful paper-ripple {
+  color: #4285f4;
+}
+
+.colorful2{
+    color: white;
+    background: #4285f4; 
+}
+
+.colorful2 paper-ripple {
+  color: white;
+}
+
+.vertical{
+	vertical-align: middle;
+}
+
+.minWidth{
+	min-width: 130px;
+	padding-left: 10px;
+	padding-right: 19px;
+}
+
+
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.style{
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.style paper-ripple {
+  opacity:0.6;
+}
+
+.margin_right{
+	margin-right:25px; 
+}
+
+.color1{
+	color: #03a9f4;
+}
+.color1:hover{
+	background:#e1f5fe;
+}
+.color1 paper-ripple {
+	color: #ff4081;
+}
+
+.color2{
+	color: #f44336;
+}
+.color2:hover{
+	background:#ffebee;
+}
+.color2 paper-ripple {
+	color: #FF4081;
+}
+
+.color3{
+	color: #ff9800;
+}
+.color3:hover{
+	background:#fff3e0;
+}
+.color3 paper-ripple {
+	color: #ff4081;
+}
+
+.color4{
+	color: #4caf50;
+}
+.color4:hover{
+	background:#e8f5e9;
+}
+.color4 paper-ripple {
+	color: #ff4081;
+}
+
+.color5{
+	color: #f44336;
+}
+.color5:hover{
+	background:#ffebee;
+}
+.color5 paper-ripple {
+	color: #ff4081;
+}
+
+.color6{
+	color: #03a9f4;
+}
+.color6:hover{
+	background:#e1f5fe;
+}
+.color6 paper-ripple {
+	color: #ff4081;
+}

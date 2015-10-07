@@ -1,0 +1,118 @@
+.vertical {
+	vertical-align: middle;
+}
+
+.flex {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.margin_right {
+	margin-right: 25px;
+}
+
+.huge iron-icon {
+	width: 100px;
+	height: 100px;
+}
+
+.minWidth {
+	min-width: 100px;
+}
+
+.spacing {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+.color1 {
+	color: #03a9f4;
+}
+
+.color1:hover {
+	background: #e1f5fe;
+	border-radius: 50%;
+}
+
+.color1 paper-ripple {
+	color: #212121;
+}
+
+.color2 {
+	color: #f44336;
+}
+
+.color2:hover {
+	background: #ffebee;
+	border-radius: 50%;
+}
+
+.color2 paper-ripple {
+	color: #212121;
+}
+
+.color3 {
+	color: #ff9800;
+}
+
+.color3:hover {
+	background: #fff3e0;
+	border-radius: 50%;
+}
+
+.color3 paper-ripple {
+	color: #212121;
+}
+
+.color4 {
+	color: #4caf50;
+}
+
+.color4:hover {
+	background: #e8f5e9;
+	border-radius: 50%;
+}
+
+.color4 paper-ripple {
+	color: #212121;
+}
+
+.color5 {
+	color: #03a9f4;
+}
+
+.color5:hover {
+	background: #e1f5fe;
+	border-radius: 50%;
+}
+
+.color5 paper-ripple {
+	color: #212121;
+}
+
+.color6 {
+	color: #f44336;
+}
+
+.color6:hover {
+	background: #ffebee;
+	border-radius: 50%;
+}
+
+.color6 paper-ripple {
+	color: #212121;
+}
+
+.color7 {
+	color: #03a9f4;
+}
+
+.color7:hover {
+	background: #e1f5fe;
+	border-radius: 50%;
+}
+
+.color7 paper-ripple {
+	color: #212121;
+}

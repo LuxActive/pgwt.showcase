@@ -1,0 +1,83 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:p="urn:import:com.luxactive.pgwt.paper_input" xmlns:i="urn:import:com.luxactive.pgwt.paper_icon_button"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field='css' type='com.luxactive.pgwt.showcase.css.Css' />
+
+	<g:HTMLPanel>
+		<h4>Text input</h4>
+		<paper-card ui:field="text_card" class="{css.paper_input_style.fill}">
+			<div class="card-content">
+				<p:PaperInput ui:field="label" label="label" />
+				<p:PaperInput ui:field="password" label="password"
+					type="password" />
+				<p:PaperInput ui:field="no_label" label="label (no-label-float)"
+					noLabelFloat="true" />
+				<p:PaperInput ui:field="disabled" label="disabled"
+					disabled="true" />
+			</div>
+		</paper-card>
+		<h4>Text area</h4>
+		<paper-card ui:field="textarea_card" class="{css.paper_input_style.fill}">
+			<div class="card-content">
+				<p:PaperTextarea ui:field="textarea" label="textarea label" />
+			</div>
+		</paper-card>
+		<h4>Validation</h4>
+		<paper-card ui:field="validation_card" class="{css.paper_input_style.fill}">
+			<div class="card-content">
+				<p:PaperInput ui:field="input_required"
+					label="input validates on blur (required, auto-validate)"
+					errorMessage="needs some text!" required="true" autoValidate="true" />
+				<p:PaperInput ui:field="input_pattern"
+					label="only type letters (auto-validate)" errorMessage="letters only!"
+					pattern="[a-zA-Z]*" autoValidate="true" />
+				<p:PaperInput ui:field="input_validate"
+					label="only type letters (no auto validate)" errorMessage="letters only, required input!"
+					required="true" pattern="[a-zA-Z]*" />
+				<br />
+				<g:Button ui:field="validate" text="Validate!"
+					styleName="{css.paper_input_style.left}" />
+			</div>
+		</paper-card>
+		<h4>Character counter</h4>
+		<paper-card ui:field="character_card" class="{css.paper_input_style.fill}">
+			<div class="card-content">
+				<p:PaperInput ui:field="character_label" label="label"
+					charCounter="true" />
+				<p:PaperInput ui:field="maxLength_label" label="at most 10 letters"
+					autoValidate="true" charCounter="true" pattern="[a-zA-Z]*"
+					maxlength="10" errorMessage="letters only!" />
+				<p:PaperTextarea ui:field="character_area" label="textarea"
+					charCounter="true" />
+				<p:PaperTextarea ui:field="maxLength_area" label="textarea with maxlength"
+					charCounter="true" maxlength="10" />
+				<p:PaperTextarea ui:field="maxLRow_area"
+					label="text area with rows and max-rows" rows="3" maxRows="4" />
+			</div>
+		</paper-card>
+		<h4>Prefixes and Suffixes</h4>
+		<paper-card ui:field="prefix_card">
+			<div class="card-content">
+				<paper-input ui:field="prefix_input" label="total" type="number">
+					<div prefix="">$</div>
+				</paper-input>
+				<paper-input ui:field="sufix_input" label="username">
+					<div suffix="">@email.com</div>
+				</paper-input>
+				<paper-input ui:field="icons_input" label="icons and buttons">
+					<iron-icon prefix="" icon="search" />
+					<paper-icon-button ui:field="clear_icon" suffix=""
+						icon="clear" alt="clear" class="{css.paper_input_style.button}" />
+				</paper-input>
+			</div>
+		</paper-card>
+		<h4>Complex inputs</h4>
+		<paper-card ui:field="complex_card">
+			<div class="card-content">
+				Sorry no such input available yet!
+			</div>
+		</paper-card>
+	</g:HTMLPanel>
+</ui:UiBinder> 

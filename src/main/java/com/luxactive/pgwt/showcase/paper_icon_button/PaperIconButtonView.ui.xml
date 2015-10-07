@@ -1,0 +1,100 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:p="urn:import:com.luxactive.pgwt.paper_icon_button" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field='css' type='com.luxactive.pgwt.showcase.css.Css' />
+
+	<g:HTMLPanel>
+		<div class="{css.paper_icon_button_style.flex}">
+			<div
+				class="{css.paper_icon_button_style.vertical} {css.paper_icon_button_style.margin_right}">
+				<h4>Enabled</h4>
+				<paper-card ui:field="enabled_card">
+					<div class="card-content {css.paper_icon_button_style.minWidth}">
+						<div class="{css.paper_icon_button_style.spacing}">
+							<p:PaperIconButton ui:field="enabled1" icon="menu"
+								alt="menu" />
+							<p:PaperIconButton ui:field="enabled2" icon="favorite"
+								alt="heart" />
+							<p:PaperIconButton ui:field="enabled3" icon="arrow-back"
+								alt="arrow-back" />
+							<p:PaperIconButton ui:field="enabled4" icon="arrow-forward"
+								alt="arrow-forward" />
+							<p:PaperIconButton ui:field="enabled5" icon="clear"
+								alt="clear" />
+							<p:PaperIconButton ui:field="enabled6" icon="polymer"
+								alt="polymer" />
+							<p:PaperIconButton ui:field="enabled7"
+								src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"
+								alt="octocat" />
+						</div>
+					</div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_icon_button_style.vertical} {css.paper_icon_button_style.margin_right}">
+				<h4>Disabled</h4>
+				<paper-card ui:field="disabled_card">
+					<div class="card-content {css.paper_icon_button_style.minWidth}">
+						<div class="{css.paper_icon_button_style.spacing}">
+						<p:PaperIconButton ui:field="disabled1" icon="menu"
+							alt="menu" disabled="true" />
+						<p:PaperIconButton ui:field="disabled2" icon="favorite"
+							alt="heart" disabled="true" />
+						<p:PaperIconButton ui:field="disabled3" icon="arrow-back"
+							alt="arrow-back" disabled="true" />
+						<p:PaperIconButton ui:field="disabled4" icon="arrow-forward"
+							alt="arrow-forward" disabled="true" />
+						<p:PaperIconButton ui:field="disabled5" icon="clear"
+							alt="clear" disabled="true" />
+						<p:PaperIconButton ui:field="disabled6" icon="polymer"
+							alt="polymer" disabled="true" />
+						<p:PaperIconButton ui:field="disabled7"
+							src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"
+							alt="octocat" disabled="true" />
+					</div></div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_icon_button_style.vertical} {css.paper_icon_button_style.margin_right}">
+				<h4>Color</h4>
+				<paper-card ui:field="color_card">
+					<div class="card-content {css.paper_icon_button_style.minWidth}">
+						<div class="{css.paper_icon_button_style.spacing}">
+						<p:PaperIconButton ui:field="color1" icon="menu"
+							alt="menu" styleName="{css.paper_icon_button_style.color1}" />
+						<p:PaperIconButton ui:field="color2" icon="favorite"
+							alt="heart" styleName="{css.paper_icon_button_style.color2}" />
+						<p:PaperIconButton ui:field="color3" icon="arrow-back"
+							alt="arrow-back" styleName="{css.paper_icon_button_style.color3}" />
+						<p:PaperIconButton ui:field="color4" icon="arrow-forward"
+							alt="arrow-forward" styleName="{css.paper_icon_button_style.color4}" />
+						<p:PaperIconButton ui:field="color5" icon="clear"
+							alt="clear" styleName="{css.paper_icon_button_style.color5}" />
+						<p:PaperIconButton ui:field="color6" icon="polymer"
+							alt="polymer" styleName="{css.paper_icon_button_style.color6}" />
+						<p:PaperIconButton ui:field="color7"
+							src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png"
+							alt="octocat" styleName="{css.paper_icon_button_style.color7}" />
+					</div></div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_icon_button_style.vertical} {css.paper_icon_button_style.margin_right}">
+				<h4>Size</h4>
+				<paper-card ui:field="size_card"
+					class="{css.paper_icon_button_style.vertical}">
+					<div class="card-content">
+						<p:PaperIconButton ui:field="size1" icon="favorite"
+							alt="heart" styleName="{css.paper_icon_button_style.huge}" />
+						<br />
+						<br />
+						<br />
+						<p:PaperIconButton ui:field="size2" icon="polymer"
+							alt="polymer" styleName="{css.paper_icon_button_style.huge}" />
+					</div>
+				</paper-card>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
