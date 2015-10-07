@@ -23,8 +23,11 @@ Some functionality is not implemented yet!
 
 ## 2. Installation
 1. Checkout and install [pgwt](https://github.com/LuxActive/pgwt)
-3. Checkout and the showcase.
+2. Checkout the showcase.
+3. Import the project as maven project (Eclipse)
 4. Call **bower install** on src/main/webapp/bower.json
+5. Refresh the src folder structure in Eclipse after the bower installation finished.
+5. Make sure under Properties - (Google Classic) - Web Application - This project has a WAR directory is checked and pointing to src/main/webapp
 5. Run the showcase like any gwt project. (An empty page should be displayed)
 6. Stop the Server.
 7. Edit the Run Configurations... - Arguments and add  **-XjsInteropMode JS** 
