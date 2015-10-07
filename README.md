@@ -1,10 +1,6 @@
 # pgwt-showcase
 
-<br/>
-
 Showcase project for the [pgwt library](https://github.com/LuxActive/pgwt) Polymer 1.0 Gwt library.
-
-<br/>
 
 ## 1. Supported elements
 As of this moment the following Elements are supported. Elements will be added and existing updated.
@@ -18,7 +14,6 @@ As of this moment the following Elements are supported. Elements will be added a
 | paper-drawer-panel	| 1.0.3		|
 | paper-input	| 1.0.14		|
 
-<br/>
 Some functionality is not implemented yet!
 
 ## 2. Installation
