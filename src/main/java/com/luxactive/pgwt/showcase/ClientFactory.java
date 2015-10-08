@@ -8,6 +8,7 @@ import com.luxactive.pgwt.showcase.paper_button.PaperButtonPlace;
 import com.luxactive.pgwt.showcase.paper_card.PaperCardPlace;
 import com.luxactive.pgwt.showcase.paper_icon_button.PaperIconButtonPlace;
 import com.luxactive.pgwt.showcase.paper_input.PaperInputPlace;
+import com.luxactive.pgwt.showcase.paper_radio_button.PaperRadioButtonPlace;
 
 public interface ClientFactory {
 
@@ -29,4 +30,6 @@ public interface ClientFactory {
 	PaperIconButtonPlace.Tokenizer getPaperIconButtonTokenizer();
 	
 	PaperInputPlace.Tokenizer getPaperInputTokenizer();
+	
+	PaperRadioButtonPlace.Tokenizer getPaperRadioButtonPlaceTokenizer();
 }

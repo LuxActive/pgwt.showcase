@@ -12,7 +12,6 @@
 				<paper-card ui:field="flat_card">
 					<div class="card-content">
 						<div class="{css.paper_button_style.minWidth}">
-							<paper-button class="{css.paper_button_style.style}">Test</paper-button>
 							<p:PaperButton ui:field="flat_button" text="button"
 								styleName="{css.paper_button_style.style}" />
 							<p:PaperButton ui:field="flat_colorful" text="colorful"

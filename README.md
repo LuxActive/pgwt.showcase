@@ -13,6 +13,7 @@ As of this moment the following Elements are supported. Elements will be added a
 | paper-icon-button	| 1.0.3		|
 | paper-drawer-panel	| 1.0.3		|
 | paper-input	| 1.0.14		|
+| paper-radio-button	| 1.0.9		|
 
 Some functionality is not implemented yet!
 

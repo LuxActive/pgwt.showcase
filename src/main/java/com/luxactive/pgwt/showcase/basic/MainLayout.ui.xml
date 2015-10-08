@@ -17,6 +17,8 @@
 						ui:field="paper_icon_button" styleName="{css.mainLayout_style.button}" />
 						<b:PaperButton text="paper-input" raised="true"
 						ui:field="paper_input" styleName="{css.mainLayout_style.button}" />
+						<b:PaperButton text="paper-radio-button" raised="true"
+						ui:field="paper_radio_button" styleName="{css.mainLayout_style.button}" />
 				</g:VerticalPanel>
 			</div>
 			<div main="" class="{css.mainLayout_style.content} {css.mainLayout_style.bgColor}">

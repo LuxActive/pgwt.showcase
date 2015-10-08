@@ -26,5 +26,8 @@ public interface Css extends ClientBundle {
 	
 	@Source("Paper_Input.css")
 	Paper_Input paper_input_style();
+	
+	@Source("Paper_Radio_Button.css")
+	Paper_Radio_Button paper_radio_button_style();
 
 }

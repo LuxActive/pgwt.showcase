@@ -11,6 +11,8 @@ import com.luxactive.pgwt.showcase.paper_icon_button.PaperIconButtonActivity;
 import com.luxactive.pgwt.showcase.paper_icon_button.PaperIconButtonPlace;
 import com.luxactive.pgwt.showcase.paper_input.PaperInputActivity;
 import com.luxactive.pgwt.showcase.paper_input.PaperInputPlace;
+import com.luxactive.pgwt.showcase.paper_radio_button.PaperRadioButtonActivity;
+import com.luxactive.pgwt.showcase.paper_radio_button.PaperRadioButtonPlace;
 
 public class ApplicationActivityMapper implements ActivityMapper {
 
@@ -47,6 +49,8 @@ public class ApplicationActivityMapper implements ActivityMapper {
 			activity = new PaperIconButtonActivity((PaperIconButtonPlace) place, clientFactory);
 		} else if (place instanceof PaperInputPlace) {
 			activity = new PaperInputActivity((PaperInputPlace) place, clientFactory);
+		} else if (place instanceof PaperRadioButtonPlace) {
+			activity = new PaperRadioButtonActivity((PaperRadioButtonPlace) place, clientFactory);
 		}
 
 		return activity;

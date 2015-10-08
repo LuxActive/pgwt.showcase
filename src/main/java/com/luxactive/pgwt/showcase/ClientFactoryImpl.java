@@ -16,6 +16,8 @@ import com.luxactive.pgwt.showcase.paper_button.PaperButtonPlace;
 import com.luxactive.pgwt.showcase.paper_card.PaperCardPlace;
 import com.luxactive.pgwt.showcase.paper_icon_button.PaperIconButtonPlace;
 import com.luxactive.pgwt.showcase.paper_input.PaperInputPlace;
+import com.luxactive.pgwt.showcase.paper_radio_button.PaperRadioButtonPlace;
+import com.luxactive.pgwt.showcase.paper_radio_button.PaperRadioButtonPlace.Tokenizer;
 
 public class ClientFactoryImpl implements ClientFactory {
 
@@ -124,6 +126,11 @@ public class ClientFactoryImpl implements ClientFactory {
 	@Override
 	public PaperInputPlace.Tokenizer getPaperInputTokenizer() {
 		return new PaperInputPlace.Tokenizer();
+	}
+
+	@Override
+	public Tokenizer getPaperRadioButtonPlaceTokenizer() {
+		return new PaperRadioButtonPlace.Tokenizer();
 	}
 
 }

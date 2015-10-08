@@ -17,6 +17,7 @@ import com.luxactive.pgwt.showcase.paper_button.PaperButtonPlace;
 import com.luxactive.pgwt.showcase.paper_card.PaperCardPlace;
 import com.luxactive.pgwt.showcase.paper_icon_button.PaperIconButtonPlace;
 import com.luxactive.pgwt.showcase.paper_input.PaperInputPlace;
+import com.luxactive.pgwt.showcase.paper_radio_button.PaperRadioButtonPlace;
 
 public class MainLayout extends Composite {
 	private static LayoutUiBinder uiBinder = GWT.create(LayoutUiBinder.class);
@@ -40,13 +41,15 @@ public class MainLayout extends Composite {
 	PaperButton paper_icon_button;
 	@UiField
 	PaperButton paper_input;
+	@UiField
+	PaperButton paper_radio_button;
 
 	public MainLayout() {
 		initWidget(uiBinder.createAndBindUi(this));
 
 		menuButton.setVisible(drawer.getNarrow());
 
-		menuButton.addEventListener("click", new EventListener() {
+		menuButton.addClickEventListener(new EventListener() {
 			@Override
 			public void handleEvent(Event event) {
 				drawer.togglePanel();
@@ -56,33 +59,39 @@ public class MainLayout extends Composite {
 		drawer.addEventListener("paper-responsive-change", new EventListener() {
 			@Override
 			public void handleEvent(Event event) {
-				GWT.log(drawer.getNarrow() + "");
 				menuButton.setVisible(drawer.getNarrow());
 			}
 		});
 
-		paper_button.addEventListener("click", new EventListener() {
+		paper_button.addClickEventListener(new EventListener() {
 			@Override
 			public void handleEvent(Event event) {
 				clientFactory.getPlaceController().goTo(new PaperButtonPlace(""));
 			}
 		});
-		paper_card.addEventListener("click", new EventListener() {
+		paper_card.addClickEventListener(new EventListener() {
 			@Override
 			public void handleEvent(Event event) {
 				clientFactory.getPlaceController().goTo(new PaperCardPlace(""));
 			}
 		});
-		paper_icon_button.addEventListener("click", new EventListener() {
+		paper_icon_button.addClickEventListener(new EventListener() {
 			@Override
 			public void handleEvent(Event event) {
 				clientFactory.getPlaceController().goTo(new PaperIconButtonPlace(""));
 			}
 		});
-		paper_input.addEventListener("click", new EventListener() {
+		paper_input.addClickEventListener(new EventListener() {
 			@Override
 			public void handleEvent(Event event) {
 				clientFactory.getPlaceController().goTo(new PaperInputPlace(""));
+			}
+		});
+		
+		paper_radio_button.addClickEventListener(new EventListener() {
+			@Override
+			public void handleEvent(Event event) {
+				clientFactory.getPlaceController().goTo(new PaperRadioButtonPlace(""));
 			}
 		});
 

@@ -1,0 +1,52 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:p="urn:import:com.luxactive.pgwt.paper_radio_button" xmlns:g="urn:import:com.google.gwt.user.client.ui">
+
+	<ui:with field='css' type='com.luxactive.pgwt.showcase.css.Css' />
+
+	<g:HTMLPanel>
+		<div class="{css.paper_button_style.flex}">
+			<div
+				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
+				<h4>Enabled</h4>
+				<paper-card ui:field="enabled_card">
+					<div class="card-content">
+						<div class="{css.paper_button_style.minWidth}">
+						<p:PaperRadioButton label="Oxygen" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						<p:PaperRadioButton label="Carbon" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						<p:PaperRadioButton label="Hydrogen" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						<p:PaperRadioButton label="Nitrogen" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						<p:PaperRadioButton label="Calcium" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						</div>
+					</div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
+				<h4>Disabled</h4>
+				<paper-card ui:field="disabled_card">
+					<div class="card-content">
+						<div class="{css.paper_button_style.minWidth}">
+						<p:PaperRadioButton label="Oxygen" disabled="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						<p:PaperRadioButton label="Carbon" disabled="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						<p:PaperRadioButton label="Hydrogen" disabled="true" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						<p:PaperRadioButton label="Nitrogen" disabled="true" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						<p:PaperRadioButton label="Calcium" disabled="true" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+						</div>
+					</div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
+				<h4>Color</h4>
+				<paper-card ui:field="color_card">
+					<div class="card-content">
+						<div class="{css.paper_button_style.minWidth}">
+						Sorry no styling awailable!
+						</div>
+					</div>
+				</paper-card>
+			</div>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder> 
