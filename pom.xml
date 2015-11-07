@@ -90,6 +90,7 @@
                 <version>${gwt.version}</version>
                 <configuration>
                     <strict>true</strict>
+                    <jsInteropMode>JS</jsInteropMode>
                     
                     <testTimeOut>180</testTimeOut>
                     <mode>htmlunit</mode>
@@ -105,8 +106,8 @@
                     <copyWebapp>true</copyWebapp>
                     <hostedWebapp>${webappDirectory}</hostedWebapp>
                     
-                    <runTarget>pgwt-showcase.html</runTarget>
-                    <module>com.luxactive.pgwt.showcase.pgwt-showcase</module>
+                    <runTarget>pgwtShowcase.html</runTarget>
+                    <module>com.luxactive.pgwt.pgwtShowcase</module>
                 </configuration>
                 <executions>
                     <execution>
