@@ -54,13 +54,27 @@
 					</div>
 				</paper-card>
 			</div>
+			
 			<div
 				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
 				<h4>Toggleable</h4>
 				<paper-card ui:field="toggleable_card"
 					class="{css.paper_card_style.padding_right}">
 					<div class="card-content {css.paper_button_style.minWidth}">
-						Sorry no toggle awailable!
+						<p:PaperButton ui:field="flat_button_toggle" text="button"
+							toggles="true" styleName="{css.paper_button_style.style}" />
+						<p:PaperButton ui:field="raised_noink_toggle"
+							text="noink" raised="true" noink="true" toggles="true"
+							styleName="{css.paper_button_style.style}" />
+						<p:PaperButton ui:field="flat_colorful_toggle" text="colorful"
+							toggles="true" styleName="{css.paper_button_style.style} {css.paper_button_style.colorful}" />
+						<p:PaperButton ui:field="raised_colorful_toggle"
+							text="colorful" toggles="true" raised="true"
+							styleName="{css.paper_button_style.style}  {css.paper_button_style.colorful2}" />
+						<p:PaperButton ui:field="raised_ok_toggle" text="ok"
+							toggles="true" icon="check" styleName="{css.paper_button_style.style}  {css.paper_button_style.colorful}" />
+						<p:PaperButton ui:field="raised_cancel_toggle" text="cancel"
+							toggles="true" icon="clear" styleName="{css.paper_button_style.style}" />
 					</div>
 				</paper-card>
 			</div>

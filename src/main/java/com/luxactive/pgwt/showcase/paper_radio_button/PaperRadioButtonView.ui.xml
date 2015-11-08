@@ -12,11 +12,16 @@
 				<paper-card ui:field="enabled_card">
 					<div class="card-content">
 						<div class="{css.paper_button_style.minWidth}">
-						<p:PaperRadioButton label="Oxygen" styleName="{css.paper_radio_button_style.margin_bottom}"/>
-						<p:PaperRadioButton label="Carbon" styleName="{css.paper_radio_button_style.margin_bottom}"/>
-						<p:PaperRadioButton label="Hydrogen" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
-						<p:PaperRadioButton label="Nitrogen" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
-						<p:PaperRadioButton label="Calcium" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+							<p:PaperRadioButton label="Oxygen"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Carbon"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Hydrogen" checked="true"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Nitrogen" checked="true"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Calcium" checked="true"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
 						</div>
 					</div>
 				</paper-card>
@@ -27,11 +32,16 @@
 				<paper-card ui:field="disabled_card">
 					<div class="card-content">
 						<div class="{css.paper_button_style.minWidth}">
-						<p:PaperRadioButton label="Oxygen" disabled="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
-						<p:PaperRadioButton label="Carbon" disabled="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
-						<p:PaperRadioButton label="Hydrogen" disabled="true" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
-						<p:PaperRadioButton label="Nitrogen" disabled="true" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
-						<p:PaperRadioButton label="Calcium" disabled="true" checked="true" styleName="{css.paper_radio_button_style.margin_bottom}"/>
+							<p:PaperRadioButton label="Oxygen" disabled="true"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Carbon" disabled="true"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Hydrogen" disabled="true"
+								checked="true" styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Nitrogen" disabled="true"
+								checked="true" styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Calcium" disabled="true"
+								checked="true" styleName="{css.paper_radio_button_style.margin_bottom}" />
 						</div>
 					</div>
 				</paper-card>
@@ -39,10 +49,50 @@
 			<div
 				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
 				<h4>Color</h4>
+				<style id="rippleColors">
+					.color1 #ink.paper-radio-button{color: #01579b;}
+					.color1[checked] #ink.paper-radio-button{color: #01579b;}
+					.color2 #ink.paper-radio-button{color: #b71c1c;}
+					.color2[checked] #ink.paper-radio-button{color: #b71c1c;}
+					.color3 #ink.paper-radio-button{color: #e65100;}
+					.color3[checked] #ink.paper-radio-button{color: #e65100;}
+					.color4 #ink.paper-radio-button{color: #1b5e20;}
+					.color4[checked] #ink.paper-radio-button{color: #1b5e20;}
+				</style>
 				<paper-card ui:field="color_card">
 					<div class="card-content">
 						<div class="{css.paper_button_style.minWidth}">
-						Sorry no styling awailable!
+							<p:PaperRadioButton label="Oxygen" checked="true"
+								styleName="color1 {css.paper_radio_button_style.margin_bottom}"
+								onColor="#03a9f4" offColor="#01579b" />
+							<p:PaperRadioButton label="Carbon" checked="true" onColor="#f44336" offColor="#b71c1c" 
+								styleName="color2 {css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Hydrogen" checked="true" onColor="#ff9800" offColor="#e65100"
+								styleName="color3 {css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Nitrogen" checked="true" onColor="#4caf50" offColor="#1b5e20"
+								styleName="color4 {css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Calcium" checked="true"  onColor="#03a9f4" offColor="#01579b"
+								styleName="color1 {css.paper_radio_button_style.margin_bottom}" />
+						</div>
+					</div>
+				</paper-card>
+			</div>
+			<div
+				class="{css.paper_button_style.vertical} {css.paper_button_style.margin_right}">
+				<h4>Noink</h4>
+				<paper-card ui:field="noink_card">
+					<div class="card-content">
+						<div class="{css.paper_button_style.minWidth}">
+							<p:PaperRadioButton label="Oxygen" noink="true"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Carbon" noink="true"
+								styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Hydrogen" noink="true"
+								checked="true" styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Nitrogen" noink="true"
+								checked="true" styleName="{css.paper_radio_button_style.margin_bottom}" />
+							<p:PaperRadioButton label="Calcium" noink="true"
+								checked="true" styleName="{css.paper_radio_button_style.margin_bottom}" />
 						</div>
 					</div>
 				</paper-card>

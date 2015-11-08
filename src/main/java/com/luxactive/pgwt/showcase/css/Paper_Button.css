@@ -1,106 +1,122 @@
-.colorful{
-    color: #4285f4;
+.colorful {
+	color: #4285f4;
 }
 
 .colorful paper-ripple {
-  color: #4285f4;
+	color: #4285f4;
 }
 
-.colorful2{
-    color: white;
-    background: #4285f4; 
+.colorful[toggles][active] {
+	background: rgba(66, 133, 244, 0.25);
+}
+
+.colorful2 {
+	color: white;
+	background: #4285f4;
 }
 
 .colorful2 paper-ripple {
-  color: white;
+	color: white;
 }
 
-.vertical{
+.colorful2[toggles][active] {
+	background: rgba(66, 133, 244, 0.75);
+}
+
+.vertical {
 	vertical-align: middle;
 }
 
-.minWidth{
+.minWidth {
 	min-width: 130px;
 	padding-left: 10px;
 	padding-right: 19px;
 }
 
-
-.flex{
+.flex {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
-.style{
+.style {
 	width: 100%;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
-.style paper-ripple {
-  opacity:0.6;
+
+.margin_right {
+	margin-right: 25px;
 }
 
-.margin_right{
-	margin-right:25px; 
-}
-
-.color1{
+.color1 {
 	color: #03a9f4;
 }
-.color1:hover{
-	background:#e1f5fe;
+
+.color1:hover {
+	background: #e1f5fe;
 }
+
 .color1 paper-ripple {
 	color: #ff4081;
 }
 
-.color2{
+.color2 {
 	color: #f44336;
 }
-.color2:hover{
-	background:#ffebee;
+
+.color2:hover {
+	background: #ffebee;
 }
+
 .color2 paper-ripple {
 	color: #FF4081;
 }
 
-.color3{
+.color3 {
 	color: #ff9800;
 }
-.color3:hover{
-	background:#fff3e0;
+
+.color3:hover {
+	background: #fff3e0;
 }
+
 .color3 paper-ripple {
 	color: #ff4081;
 }
 
-.color4{
+.color4 {
 	color: #4caf50;
 }
-.color4:hover{
-	background:#e8f5e9;
+
+.color4:hover {
+	background: #e8f5e9;
 }
+
 .color4 paper-ripple {
 	color: #ff4081;
 }
 
-.color5{
+.color5 {
 	color: #f44336;
 }
-.color5:hover{
-	background:#ffebee;
+
+.color5:hover {
+	background: #ffebee;
 }
+
 .color5 paper-ripple {
 	color: #ff4081;
 }
 
-.color6{
+.color6 {
 	color: #03a9f4;
 }
-.color6:hover{
-	background:#e1f5fe;
+
+.color6:hover {
+	background: #e1f5fe;
 }
+
 .color6 paper-ripple {
 	color: #ff4081;
 }

@@ -74,9 +74,19 @@
 			</div>
 		</paper-card>
 		<h4>Complex inputs</h4>
-		<paper-card ui:field="complex_card">
+		<paper-card ui:field="complex_card" class="{css.paper_input_style.fill}">
 			<div class="card-content">
-				Sorry no such input available yet!
+				<div class="card-content">
+				Autovalidation not working!?
+					<template is="dom-bind">
+						<paper-input-container always-float-label="true"
+							auto-validate="true" attr-for-value="value">
+							<label>Social Security Number</label>
+							<ssn-input class="paper-input-input"></ssn-input>
+							<paper-input-error>SSN invalid!</paper-input-error>
+						</paper-input-container>
+					</template>
+				</div>
 			</div>
 		</paper-card>
 	</g:HTMLPanel>
